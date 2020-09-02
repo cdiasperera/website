@@ -8,10 +8,12 @@ import styles from './Links.module.css'
 
 const Links = () => {
   return (
-    <>
-      <h1 className={styles.Links}>Links</h1>
-      <NavLink name='Test' dest='#'/>
-    </>
+    <div className={styles.Links}>
+      <h1>Links</h1>
+      <div className={styles.list}>
+        <NavLink name='Test' dest='https://www.google.com' />
+      </div>
+    </div>
   )
 }
 

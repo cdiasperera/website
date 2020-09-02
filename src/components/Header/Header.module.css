@@ -1,5 +1,22 @@
 .Header {
   margin: 0 auto;
   padding-bottom: 20px;
-  width: fit-content;
+  background-image: url('/header.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5vw 2em;
+  text-align: center;
+  opacity: 80%;
+  border-radius: 1px;
+
 }
+
+.Header h1 {
+  opacity: 100%;
+  color: #FFFFF2;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  
+}
+
