@@ -1,8 +1,13 @@
 import React from 'react'
 
+// STYLES
+import styles from './NavLink.module.css'
+
 const NavLink = ({ name, dest }) => {
   return (
-    <a href={dest}>> {name}</a>
+    <div className={styles.NavLink}>
+      <a href={dest}>> {name}</a>
+    </div>
   )
 }
 
