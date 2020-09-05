@@ -13,6 +13,15 @@ const Links = () => {
       <div className={styles.list}>
         <NavLink name='Test' dest='https://www.google.com' />
         <NavLink name='Test' dest='https://www.google.com' />
+        <NavLink name='Test' dest='https://www.google.com' />
+        <NavLink name='Test' dest='https://www.google.com' />
+        <NavLink name='Test' dest='https://www.google.com' />
+        <NavLink name='Test' dest='https://www.google.com' />
+        <NavLink name='Test' dest='https://www.google.com' />
+        <NavLink name='Test' dest='https://www.google.com' />
+        <NavLink name='Test' dest='https://www.google.com' />
+        <NavLink name='Test' dest='https://www.google.com' />
+        <NavLink name='Test' dest='https://www.google.com' />
       </div>
     </div>
   )

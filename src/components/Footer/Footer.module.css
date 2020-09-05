@@ -1,3 +1,21 @@
 .Footer {
-  
+  background-color: #C44900;
+  color: #FFFFF2;
+  padding: 3vh 0 0.1vh 0;
+}
+
+.Footer li {
+  list-style: '> ';
+  padding: 3px 0;
+}
+
+.Footer li a {
+  color: white;
+}
+
+.Category {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  display: inline-block;
+  font-weight: bold;
 }
