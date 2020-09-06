@@ -1,12 +1,21 @@
 import React from 'react'
 import { render } from 'react-snapshot'
+import { BrowserRouter } from 'react-router-dom'
+
+// COMPONENTS
 import App from './App'
+
+// STYLES
 import './index.css'
+
+// MISC
 import * as serviceWorker from './serviceWorker'
 
 render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 )

@@ -9,7 +9,7 @@ const Footer = () => {
       <ul>
         <span className={styles.Category}>Links</span>
         <li>Resume</li>
-        <li>About me</li>
+        <li><a href='/about-me'>About Me</a></li>
         <li><a href='https://github.com/cdiasperera/website'>Source</a></li>
       </ul>
     </div>

@@ -1,0 +1,18 @@
+.ReturnHomeButton {
+  position: fixed;
+  top: 29px;
+  left: 25px;
+}
+
+@media (max-width: 900px) {
+  .ReturnHomeButton {
+      margin: 10px auto 0 auto;
+      top: 0;
+      left: 0;
+      position: relative;
+  }
+
+  h1 {
+    margin-top: 5px;
+  }
+}

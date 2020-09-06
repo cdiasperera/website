@@ -1,16 +1,15 @@
 import React from 'react'
+import { Route } from 'react-router-dom'
 
 // COMPONENTS
-import Layout from './hoc/Layout'
-import Header from './components/Header'
-import Links from './components/Links'
-import Footer from './components/Footer'
+import Landing from './pages/Landing'
+import AboutMe from './pages/AboutMe'
 function App () {
   return (
-    <Layout>
-      <Header />
-      <Links />
-    </Layout>
+    <>
+      <Route path='/' exact component={Landing} />
+      <Route path='/about-me' exact component={AboutMe} />
+    </>
   )
 }
 
