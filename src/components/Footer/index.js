@@ -8,7 +8,7 @@ const Footer = () => {
     <div className={styles.Footer}>
       <ul>
         <span className={styles.Category}>Links</span>
-        <li>Resume</li>
+        <li><a href='/resume'> Resume </a></li>
         <li><a href='/about-me'>About Me</a></li>
         <li><a href='https://github.com/cdiasperera/website'>Source</a></li>
       </ul>

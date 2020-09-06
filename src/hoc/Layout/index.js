@@ -8,6 +8,7 @@ import Footer from '../../components/Footer'
 import ReturnHomeButton from '../../components/ReturnHomeButton'
 
 const Layout = ({ children, navHomeButton }) => {
+  console.log('Why hello there. What brings you to this part of town?')
   let returnHome = null
 
   if (navHomeButton) {
