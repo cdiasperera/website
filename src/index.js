@@ -1,5 +1,5 @@
 import React from 'react'
-import { render } from 'react-snapshot'
+import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
 
 // COMPONENTS
@@ -11,7 +11,7 @@ import './index.css'
 // MISC
 import * as serviceWorker from './serviceWorker'
 
-render(
+ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <App />

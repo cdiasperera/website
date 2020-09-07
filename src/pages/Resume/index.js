@@ -1,5 +1,8 @@
 import React from 'react'
 
+// RESOURCES
+import resume from '../../documents/resume.pdf'
+
 // COMPONENTS
 import Layout from '../../hoc/Layout'
 
@@ -12,13 +15,13 @@ const Resume = () => {
       <div className={styles.Resume}>
         <h1> Resume</h1>
         <iframe
-          src='./documents/resume.pdf'
+          src={resume}
           title='Resume'
           width='100%'
-          height='400px'
+          height='800px'
         />
         <p>
-          <a href='./documents/resume.pdf'> Download resume</a>
+          <a href={resume}> Download resume</a>
         </p>
       </div>
     </Layout>
