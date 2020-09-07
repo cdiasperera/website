@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route } from 'react-router-dom'
+import { Route, Redirect } from 'react-router-dom'
 
 // COMPONENTS
 import Landing from './pages/Landing'
@@ -10,6 +10,7 @@ function App () {
   return (
     <>
       <Route path='/' exact component={Landing} />
+      <Redirect from='/website' to='/' />
       <Route path='/about-me' exact component={AboutMe} />
       <Route path='/resume' exact component={Resume} />
     </>
