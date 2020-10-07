@@ -11,7 +11,7 @@ const Links = () => {
     <div className={styles.Links}>
       <h1>Links</h1>
       <div className={styles.list}>
-        <NavLink name='Test' dest='https://www.google.com' />
+        {/* <NavLink name='Test' dest='https://www.google.com' /> */}
       </div>
     </div>
   )
