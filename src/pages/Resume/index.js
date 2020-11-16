@@ -5,7 +5,6 @@ import resume from '../../documents/resume.pdf'
 
 // COMPONENTS
 import Layout from '../../hoc/Layout'
-import { Link } from 'react-router-dom'
 
 // STYLES
 import styles from './Resume.module.css'
@@ -22,7 +21,7 @@ const Resume = () => {
           height='800px'
         />
         <p>
-          <Link href={resume}> Download resume</Link>
+          <a href={resume}> Download resume</a>
         </p>
       </div>
     </Layout>

@@ -9,7 +9,7 @@ import styles from './NavLink.module.css'
 const NavLink = ({ name, dest }) => {
   return (
     <div className={styles.NavLink}>
-      <Link to={dest}>> {name}</Link>
+      <Link to={dest}> {name}</Link>
     </div>
   )
 }
