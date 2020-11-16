@@ -13,23 +13,22 @@ const YelpCamp = () => {
         Yonks ago, back before I even starting programming seriously, I made a
         simply CRUD website, following a course on <a href='https://www.udemy.com/course/the-web-developer-bootcamp/'> Udemy </a>.
         It was a Yelp-clone for camping sites around the United States, with an
-        added social-media element to it. I named it <a href='http://yelpcampcdp.herokuapp.com/'>YelpCamp</a>.
+        added social-media element to it. I called it <a href='http://yelpcampcdp.herokuapp.com/'>YelpCamp</a> (surprise surprise).
       </p>
 
       <p>
-        It was actually a pretty involved project for me at the time. I had some
+        It was actually a pretty tough project for me at the time. I had some
         cursory programming knowledge, but I knew nothing of web development,
         not even HTML. It's honestly quite difficult to list exactly what I had
-        learned.
+        learned, just because I had to learn so much.
       </p>
 
-
-      <img className={styles.YelpCampImg} src={yelpcamp} height=''/>
+      <img className={styles.YelpCampImg} src={yelpcamp} alt='Yelpcamp homepage' />
 
       <p>
         Even going beyond the langauges and the frameworks, learning about
         authorization and authentication, design, testing, and even a bit of web
-        scapring, really dragged out the project. For such a simple website, 
+        scapring, really dragged out the project. For such a simple website,
         there was a lot of work put into it.
       </p>
 
