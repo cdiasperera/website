@@ -31,8 +31,8 @@ const IntroToCSProj = () => {
           The problem itself was the <b>(multi)set partition problem </b>, which
           involved  creating two disjoint sets from the original set, such
           that their sums are the same. A good analogy would be to imagine the
-          original set as a collection of wooden cubes of different lengths. The goal
-          is to create two piles of cubes, such that when you stack up each
+          original set as a collection of wooden cuboids of different lengths. The goal
+          is to create two piles of cuboids, such that when you stack up each
           pile, their heights are the same.
       </p>
 
@@ -59,17 +59,17 @@ const IntroToCSProj = () => {
       </p>
 
       <p>
-        Writing the functions were simple enough, and it took only a few days.
+        Writing the code was simple enough, and it took only a few days.
         Really, the trouble involved finding the best set of parameters for
-        those functions, so it doesn't take too long to find a solution. And that
+        the simulation, so it doesn't take too long to find a solution. And that
         took multiple weeks worth of work.
       </p>
 
       <p>
         Unfortunately, a lot of our analysis (to find those parameters) was somewhat rotten when we realized
-        that our program fails spectacularly on difficult original sets. We were
-        checking how fast our program came to a conclusion, without really knowing
-        if we had the correct solution. We had to scrap a lot of code (most of which
+        that our program fails spectacularly on difficult original sets.  The problem was that we were
+        optimising for speed on relatively simple input sets, without checking that our parameters were sufficient
+        for more complex input sets. We had to scrap a lot of code (most of which
         can be found in the history of <code>testing.c</code>).
       </p>
 
@@ -81,8 +81,8 @@ const IntroToCSProj = () => {
       </p>
 
       <p>
-          Well, that all depends on the answer to the question: "<i>How long do we let our solution   evolve </i>".
-          Indeed, we can graph how accurate program was, against this parameter:
+          This parameter was dependent on another parameter: "<i>How long do we let our solution   evolve </i>".
+          Graphing these two parameters against each other yields the following:
         <div class={styles.T2Trend}>
           <img
             src={t2Graph}
@@ -92,11 +92,22 @@ const IntroToCSProj = () => {
       </p>
 
       <p>
-            It's worth noting that we can't really <i>know</i> the solution when
-            checking the accuracy of our algorithm. Rather, we can only really
-            know its consistency. However, we really only want to know the
-            consistency of the best solution, which is what <code>Percentage Similarity</code>
-            tracks.
+        To explain the axes, the independent axis is roughly how long we would let
+        our simulation evolve for. The independent axis is more interesting. When
+        given an arbitrary data set, you do not know the answer before hand (since
+        that's the objective of the program), so you cannot know if, by the end
+        of the simulation, you came to the right solution.
+      </p>
+
+      <p>
+        That said, you can track how often the <it>same</it> answer pops up, over
+        multiple generations. And for simulations that evolve long enough, the best
+        answer is almost certainly the solution. Hence, we need to track how often
+        the best answer re-appears, which is:
+        <ul>
+          <li> What the dependent axis is</li>
+          <li> The performance parameter we are tracking</li>
+        </ul>
       </p>
 
       <p>
@@ -110,7 +121,7 @@ const IntroToCSProj = () => {
             I'm relatively happy with the project, though I am disappointed with
             the analysis of it. I couldn't really find a way to find the best
             parameters for the configuration. At least, not in a way that would
-            have allowed us to complete the project in time.
+            have allowed us to complete the project on time.
       </p>
 
       <p>
@@ -122,7 +133,7 @@ const IntroToCSProj = () => {
       <p>
             That said, the improvements I could make to the project are probably
             not worth the investment, which could be put into more effective
-            places so I'm willing to say that the project is <b> done </b>.
+            places so I'm willing to call the project <b> done </b>.
       </p>
 
     </Post>
